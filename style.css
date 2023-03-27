@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background: linear-gradient(45deg, #417eee, #1a3463);
+    background-image: url(http://dajimoxia.html.xdomain.jp/mario.png);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#sns-container
+{
+    float: right;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-right: 95px;
+    z-index: 1;
+}
+#sns-container ul
+{
+    position: fixed;
+}
+#sns-container ul li
+{
+    position: relative;
+    list-style: none;
+    width: 120px;
+    background: #3e3f46;
+    border-left: solid px #fff;
+    padding: 15px;
+    transition: 0.5s;
+}
+#sns-container ul li:hover
+{
+    transform: translateX(-50px);
+    background: var(--clr);
+}
+#sns-container ul li[name="bottom"]{
+    border-bottom: solid px #fff;
+}
+#sns-container ul li a
+{
+    font-family: 'Oswald', sans-serif;
+    color: #050505;
+}
+header
+{
+    background-color: #3e3f46;
+    border-bottom: solid px #fff;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    z-index: 2;
+}
+header p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #b9b9b9;
+    margin-left: 70px;
+    font-size: 40px;
+    font-family: 'Oswald',sans-serif;
+}
+#container
+{
+    scroll-snap-align: center;
+    width: 72%;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+/*1番目*/
+#Top
+{
+    background:linear-gradient(-45deg,#b9b9b9,#fff,#b9b9b9);
+    border-bottom-right-radius: 50px;
+    height: 93vh;
+    padding-top: 7vh;
+    background-size: 200% 200%;
+    animation: ChangeColor 10s ease infinite;
+}
+@keyframes ChangeColor
+{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+#popup p
+{
+    font-size: 180px;
+    margin: 0;
+    animation-name:fadeUpAnime;
+}
+/*2番目*/
+#Profile
+{
+    background:linear-gradient(-45deg,#b9b9b9,#fff,#b9b9b9);
+    border-bottom-right-radius: 50px;
+    height: 100vh;
+    background-size: 200% 200%;
+    animation: ChangeColor 10s ease infinite;
+}
+#Profile-logo p
+{
+    color: #3e3f46;
+    font-size: 50px;
+    font-family: 'Oswald',sans-serif;
+    border-left:solid 6px #f70000;
+}
+#Profile-text p
+{
+    font-size: 20px;
+    font-family: serif;
+    margin-left: 10px;
+}
+/*3番目*/
+#Contents
+{
+    background:linear-gradient(-45deg,#b9b9b9,#fff,#b9b9b9);
+    border-bottom-right-radius: 50px;
+    height: 100vh;
+    background-size: 200% 200%;
+    animation: ChangeColor 10s ease infinite;
+}
+#Contents p
+{
+    font-family: serif;
+}
+#Contents-logo p
+{
+    color: #3e3f46;
+    font-size: 50px;
+    font-family: 'Oswald',sans-serif;
+    border-left: solid 6px #f70000;
+}
+#Contents-text p
+{
+    font-size: 20px;
+    font-family: serif;
+    margin-left: 10px;
+}
+#Contents-text p a
+{
+    text-decoration: none;
+}
+#Contents-text p a span
+{
+    color: #3e3f46;
+    transition: 0.3s;
+}
+#Contents-text p a span:hover
+{
+    color: #f70000;
+    transition: 0.3s;
+}
+#Back-to-top
+{
+    text-align: center;
+    font-size: 30px;
+    color: #3e3f46;
+    text-decoration: none;
+    font-family: 'Oswald';
+}
+#Back-to-top p
+{
+    transition: 0.3s;
+}
+#Back-to-top p:hover
+{
+    color: #f70000;
+}
+#copyright p
+{
+    font-family: 'Oswald',sans-serif;
+    color: #b9b9b9;
+}
