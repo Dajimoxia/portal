@@ -115,7 +115,7 @@ header p
 }
 #Profile-text p
 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: serif;
     margin-left: 10px;
 }
@@ -124,7 +124,7 @@ header p
 {
     background:linear-gradient(-45deg,#b9b9b9,#fff,#b9b9b9);
     border-bottom-right-radius: 50px;
-    height: 100vh;
+    height: 80vh;
     background-size: 200% 200%;
     animation: ChangeColor 10s ease infinite;
 }
@@ -141,7 +141,7 @@ header p
 }
 #Contents-text p
 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: serif;
     margin-left: 10px;
 }
@@ -158,6 +158,31 @@ header p
 {
     color: #f70000;
     transition: 0.3s;
+}
+#Contact
+{
+    background:linear-gradient(-45deg,#b9b9b9,#fff,#b9b9b9);
+    border-bottom-right-radius: 50px;
+    height: 60vh;
+    background-size: 200% 200%;
+    animation: ChangeColor 10s ease infinite;
+}
+#Contact p
+{
+    font-family: serif;
+}
+#Contact-logo p
+{
+    color: #3e3f46;
+    font-size: 50px;
+    font-family: 'Oswald',sans-serif;
+    border-left: solid 6px #f70000;
+}
+#Contact-text p
+{
+    font-size: 25px;
+    font-family: serif;
+    margin-left: 10px;
 }
 #Back-to-top
 {
