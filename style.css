@@ -119,6 +119,17 @@ header p
     font-family: serif;
     margin-left: 10px;
 }
+#Profile-text p a
+{
+    text-decoration: none;
+    color: #3e3f46;
+    transition: 0.3s;
+}
+#Profile p a:hover
+{
+    color: #f70000;
+    transition: 0.3s;
+}
 /*3番目*/
 #Contents
 {
