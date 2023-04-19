@@ -125,7 +125,7 @@ header p
     color: #3e3f46;
     transition: 0.3s;
 }
-#Profile p a:hover
+#Profile-text p a:hover
 {
     color: #f70000;
     transition: 0.3s;
