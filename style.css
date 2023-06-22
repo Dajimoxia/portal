@@ -47,7 +47,7 @@ body
 }
 #sns-container ul li a
 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald';
     color: #050505;
 }
 header
@@ -66,7 +66,7 @@ header p
     color: #b9b9b9;
     margin-left: 70px;
     font-size: 40px;
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald';
 }
 #container
 {
@@ -110,7 +110,7 @@ header p
 {
     color: #3e3f46;
     font-size: 50px;
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald';
     border-left:solid 6px #f70000;
 }
 #Profile-text p
@@ -139,10 +139,6 @@ header p
     background-size: 200% 200%;
     animation: ChangeColor 10s ease infinite;
 }
-#Contents p
-{
-    font-family: meiryo;
-}
 #Contents-logo p
 {
     color: #3e3f46;
@@ -153,7 +149,6 @@ header p
 #Contents-text p
 {
     font-size: 25px;
-    font-family: meiryo;
     margin-left: 10px;
 }
 #Contents-text p a
@@ -178,10 +173,6 @@ header p
     background-size: 200% 200%;
     animation: ChangeColor 10s ease infinite;
 }
-#Contact p
-{
-    font-family: meiryo;
-}
 #Contact-logo p
 {
     color: #3e3f46;
@@ -192,7 +183,6 @@ header p
 #Contact-text p
 {
     font-size: 25px;
-    font-family: meiryo;
     margin-left: 10px;
 }
 #Back-to-top
