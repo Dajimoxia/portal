@@ -116,7 +116,7 @@ header p
 #Profile-text p
 {
     font-size: 25px;
-    font-family: serif;
+    font-family: meiryo;
     margin-left: 10px;
 }
 #Profile-text p a
@@ -141,7 +141,7 @@ header p
 }
 #Contents p
 {
-    font-family: serif;
+    font-family: meiryo;
 }
 #Contents-logo p
 {
@@ -153,7 +153,7 @@ header p
 #Contents-text p
 {
     font-size: 25px;
-    font-family: serif;
+    font-family: meiryo;
     margin-left: 10px;
 }
 #Contents-text p a
@@ -180,7 +180,7 @@ header p
 }
 #Contact p
 {
-    font-family: serif;
+    font-family: meiryo;
 }
 #Contact-logo p
 {
@@ -192,7 +192,7 @@ header p
 #Contact-text p
 {
     font-size: 25px;
-    font-family: serif;
+    font-family: meiryo;
     margin-left: 10px;
 }
 #Back-to-top
