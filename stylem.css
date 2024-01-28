@@ -23,8 +23,8 @@ header a{
     padding-left: 5px;
     list-style: none;
     font-family: "Oswald";
-    font-size: 34px;
-    width: 180px;
+    font-size: 30px;
+    width: 100px;
     border-left: solid 2px #dddddd;
     transition: 0.2s;
 }
@@ -50,8 +50,8 @@ main{
 }
 #top p{
     padding: 5px;
-    font-size: 120px;
-    font-family: 'Noto Serif JP' , ser;
+    font-size: 60px;
+    font-family: 'Noto Serif JP' , serif;
     animation-name: titlefadeup;
     animation-duration: 1.5s;
     color: #dddddd;
@@ -138,7 +138,7 @@ main{
     text-align: center;
     background-color: #131313;
     width: 100%;
-    height: 100vh;
+    height: auto;
     z-index: 1;
 }
 #secondl{
@@ -150,8 +150,7 @@ main{
 }
 #description p{
     font-family: 'Noto Serif JP' , serif;
-    padding-top: 90px;
-    font-size: 45px;
+    font-size: 25px;
     color: #131313;
 }
 #profile-navi{
@@ -159,14 +158,14 @@ main{
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 300px;
+    width: 180px;
     height: auto;
     padding: 20px;
+    margin: 40px;
     text-align: center;
     outline: none;
-    margin-top: 100px;
     background-color: #131313;
-    font-size: 34px;
+    font-size: 25px;
     transition: ease 0.2s;
 }
 #profile-navi span{
@@ -209,13 +208,14 @@ main{
     opacity: 1.0;
 }
 #secondr img{
-    width: 600px;
+    width: 320px;
     height: auto;
 }
 #third{
     background-image: url(images/thirdback.png);
     width: 100%;
-    height: 100vh;
+    height: auto;
+    margin: 0;
     overflow: hidden;
     background-attachment: fixed;
     background-size: cover;
@@ -224,7 +224,7 @@ main{
 #description2 p{
     padding-top: 100px;
     color: #dadada;
-    font-size: 45px;
+    font-size: 25px;
     font-family: 'Noto Serif JP' , serif;
 }
 #news-navi{
@@ -232,15 +232,14 @@ main{
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 300px;
-    height: auto;
+    width: 180px;
     padding: 20px;
+    margin: 40px;
     text-align: center;
     outline: none;
-    margin-top: 450px;
     background-color: #131313;
     border: solid 1px #dadada;
-    font-size: 34px;
+    font-size: 25px;
     transition: ease 0.2s;
 }
 #news-navi span{
@@ -273,22 +272,22 @@ main{
     float: left;
     background-color: #131313;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 #fourthl{
     background: linear-gradient(180deg, #e4421e, #131313);
     float: left;
     width: 100%;
-    height: 40%;
+    height: 40vh;
 }
 #fourthr{
     width: 100%;
-    height: 60%;
+    height: 60vh;
+    margin: 0;
 }
 #description3 p{
-    padding-top: 200px;
     color: #dadada;
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Noto Serif JP' , serif;
 }
 #sns-navi{
@@ -296,15 +295,14 @@ main{
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 300px;
-    height: auto;
+    width: 180px;
     padding: 20px;
+    margin: 35px;
     text-align: center;
     outline: none;
-    margin-top: 250px;
     background-color: #131313;
     border: solid 1px #dadada;
-    font-size: 34px;
+    font-size: 25px;
     transition: ease 0.2s;
 }
 #sns-navi span{
