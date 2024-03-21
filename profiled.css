@@ -26,13 +26,13 @@ header a{
     padding-left: 5px;
     list-style: none;
     font-family: "Oswald";
-    font-size: 25px;
-    width: 180px;
+    font-size: 30px;
+    width: 200px;
     border-left: solid 2px #dadada;
     transition: 0.3s;
 }
 header a:hover{
-    background-color: #e4421e;
+    background-color: #9D57C2;
 }
 main{
     margin: 0;
@@ -94,7 +94,7 @@ header a{
     transition: 0.3s;
 }
 header a:hover{
-    background-color: #e4421e;
+    background-color: #9D57C2;
 }
 main{
     margin: 0;
