@@ -2,11 +2,21 @@
 *{
     margin: 0;
 }
+@font-face {
+    font-family: "mp-li";
+    src: url(fonts/MPLUS1p-Light.ttf);
+}
 body{
-    background-image: url(images/thirdback.png);
+    background-image: url(images/third.jpg);
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
+}
+:root{
+    --accent-color: #caa012;
+}
+::selection{
+    background-color: var(--accent-color);
 }
 header{
     -webkit-backdrop-filter: blur(30px);
@@ -30,7 +40,7 @@ header a{
     transition: 0.3s;
 }
 header a:hover{
-    background-color: #e4421e;
+    background-color: var(--accent-color);
 }
 main{
     margin: auto;

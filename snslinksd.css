@@ -4,12 +4,15 @@
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(images/title.png);
+    background-image: url(images/title.jpg);
     -webkit-backdrop-filter: blur(30px);
 	backdrop-filter: blur(30px);
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
+}
+::selection{
+    background-color: #caa012;
 }
 header{
     -webkit-backdrop-filter: blur(30px);
@@ -29,11 +32,11 @@ header a{
     font-family: "Oswald";
     font-size: 30px;
     width: 200px;
-    border-left: solid 2px #dadada;
+    border-left: solid 2px #dddddd;
     transition: 0.3s;
 }
 header a:hover{
-    background-color: #9D57C2;
+    background-color: #caa012;
 }
 main{
     margin: auto;

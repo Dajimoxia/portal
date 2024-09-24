@@ -4,11 +4,14 @@
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(images/title.png);
+    background-image: url(images/title.jpg);
 	backdrop-filter: blur(30px);
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
+}
+::selection{
+    background-color: #caa012;
 }
 header{
     width: 100%;
@@ -20,16 +23,16 @@ header a{
     float: left;
     display: flex;
     text-decoration: none;
-    color: #dadada;
+    color: #131313;
     list-style: none;
     font-family: "Oswald";
     font-size: 120px;
     width: 33%;
-    border-left: solid 2px #dadada;
+    border-left: solid 2px #131313;
     transition: 0.3s;
 }
 header a:hover{
-    background-color: #9D57C2;
+    background-color: #caa012;
 }
 main{
     margin: 0 auto;
