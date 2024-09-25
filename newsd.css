@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 *{
     margin: 0;
-}
-@font-face {
-    font-family: "mp-li";
-    src: url(fonts/MPLUS1p-Light.ttf);
 }
 body{
     background-image: url(images/third.jpg);
@@ -73,8 +70,10 @@ main{
 #contentsbox li #title{
     color: #ddd;
     font-size: 40px;
+    font-family: "M Plus 1P";
 }
 #contentsbox li #descrip{
     color: #dadada;
     font-size: 15px;
+    font-family: "M Plus 1P light";
 }
