@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=clfon:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Tilt+Warp&display=swap');
-@font-face {
-    font-family: "mp-li";
-    src: url(fonts/MPLUS1p-Light.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 *{
     margin: 0;
     overflow-x: hidden;
 }
 body{
     width: 100%;
-    font-family: "mp-li", sans-serif;
+    font-family: var(--main-font), sans-serif;
 }
 :root{
     --accent-color: #caa012;
+    --main-font : "M Plus 1P Light";
 }
 ::selection{
     background-color: var(--accent-color);
@@ -93,7 +90,7 @@ main{
     height: 100vh;
 }
 #description p{
-    font-family: 'mp-li' , serif;
+    font-family: var(--main-font) , serif;
     padding-top: 90px;
     font-size: 45px;
     color: #131313;
@@ -146,11 +143,29 @@ main{
     width: 40vw;
     height: 100vh;
     z-index: 1;
+    animation: backfadeup 10s linear infinite;
+}
+@keyframes backfadeup{
+    50%{
+        background-color: #dadada;
+    }
+    100%{
+        background-color: #131313;
+    }
 }
 #secondr img{
     width: 30vw;
     height: auto;
     z-index: 11;
+    animation: iconrotating 5s linear infinite;
+}
+@keyframes iconrotating{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 #third{
     background-image: url(images/third.jpg);
@@ -165,7 +180,7 @@ main{
     padding-top: 100px;
     color: #dadada;
     font-size: 45px;
-    font-family: 'mp-li' , serif;
+    font-family: var(--main-font) , serif;
 }
 #news-navi{
     text-decoration: none;
@@ -229,7 +244,7 @@ main{
     padding-top: 200px;
     color: #dadada;
     font-size: 50px;
-    font-family: 'mp-li' , serif;
+    font-family: var(--main-font) , serif;
 }
 #sns-navi{
     text-decoration: none;
