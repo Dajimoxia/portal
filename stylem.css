@@ -63,8 +63,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: auto;
+    width: auto;
+    height: 10%;
     animation-name: logofadeup;
     animation-duration: 1.5s;
 }
