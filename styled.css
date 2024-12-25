@@ -57,7 +57,7 @@ main{
     z-index: -1;
 }
 #top picture source{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     width: 90%;
