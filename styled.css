@@ -56,7 +56,7 @@ main{
     transform-origin: center;
     z-index: -1;
 }
-#top picture source{
+#top img{
     display: flex;
     justify-content: center;
     align-items: center;
