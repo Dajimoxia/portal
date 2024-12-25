@@ -64,7 +64,7 @@ main{
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 10%;
+    height: 50%;
     animation-name: logofadeup;
     animation-duration: 1.5s;
 }
