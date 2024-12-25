@@ -59,7 +59,7 @@ main{
     transform-origin: center;
     z-index: -1;
 }
-#top img{
+#top picture img{
     display: flex;
     justify-content: center;
     align-items: center;
