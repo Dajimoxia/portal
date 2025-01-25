@@ -91,7 +91,7 @@ main{
 }
 #description p{
     font-family: var(--main-font) , serif;
-    padding: 30px;
+    padding-top: 60px;
     font-size: 30px;
     color: #131313;
 }
