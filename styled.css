@@ -92,7 +92,7 @@ main{
 #description p{
     font-family: var(--main-font) , serif;
     padding-top: 90px;
-    font-size: 45px;
+    font-size: 30px;
     color: #131313;
 }
 #profile-navi{
