@@ -65,20 +65,6 @@ main{
     align-items: center;
     width: 100vw;
     height: auto;
-    animation-name: logofadeup;
-    animation-duration: 1.5s;
-}
-@keyframes logofadeup{
-    from{
-        color: #000000;
-        opacity: 0;
-        transform: translateX(500px);
-    }
-    to{
-        color: #dddddd;
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 #second{
     text-align: center;
