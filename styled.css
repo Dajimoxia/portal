@@ -52,6 +52,9 @@ header a:hover{
 header a #themeChange{
     transition: all 1s;
 }
+header a #themeChange:focus{
+    outline: none;
+}
 main{
     margin: auto;
     width: auto;
