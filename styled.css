@@ -92,9 +92,11 @@ main{
     justify-content: center;
     align-items: center;
 }
+#description{
+    padding: 60px;
+}
 #description p{
     font-family: var(--main-font) , serif;
-    padding-top: 60px;
     font-size: 30px;
     color: #131313;
 }
