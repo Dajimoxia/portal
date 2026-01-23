@@ -24,3 +24,17 @@ $(window).scroll(function () {
     window.addEventListener('load', scrollAnimationFunc);
     window.addEventListener('scroll', scrollAnimationFunc);
   });
+  //themeChange
+document.getElementById("themeChange").addEventListener("click",function(){
+  var theme = document.body.getAttribute("theme")
+  if (theme === "dark") {
+      document.body.setAttribute("theme","light")
+  } else {
+      document.body.setAttribute("theme","dark")
+  }
+})
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.body.setAttribute("theme","dark")
+} else {
+  document.body.setAttribute("theme","light")
+}
