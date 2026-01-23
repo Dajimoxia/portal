@@ -50,7 +50,7 @@ header a:hover{
     background-color: var(--accent-color);
 }
 header a #themeChange{
-
+    transition: all 1s;
 }
 main{
     margin: auto;
