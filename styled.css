@@ -18,12 +18,12 @@ body{
     font-family: var(--main-font), sans-serif;
 }
 body[theme="light"]{
-    --main-color: var(--dark-color);
-    --font-color: var(--light-color);
+    --main-color: #ddd;
+    --font-color: #131313;
 }
 body[theme="dark"]{
-    --main-color: var(--light-color);
-    --font-color: var(--dark-color);
+    --main-color: #131313;
+    --font-color: #ddd;
 }
 header{
     -webkit-backdrop-filter: blur(30px);
