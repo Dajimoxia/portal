@@ -88,6 +88,9 @@ main{
     float: left;
     width: 60vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #description p{
     font-family: var(--main-font) , serif;
