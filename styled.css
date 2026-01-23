@@ -49,10 +49,10 @@ header a{
 header a:hover{
     background-color: var(--accent-color);
 }
-header a #themeChange{
+#themeChange{
     transition: all 1s;
 }
-header a #themeChange:focus{
+#themeChange:focus{
     outline: none;
 }
 main{
