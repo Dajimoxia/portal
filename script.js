@@ -25,7 +25,7 @@ $(window).scroll(function () {
     window.addEventListener('scroll', scrollAnimationFunc);
   });
 
-//theme-toggl
+//theme-toggle
 const btn = document.getElementById('theme-toggle');
 const html = document.documentElement;
 
