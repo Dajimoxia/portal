@@ -35,7 +35,7 @@ header{
     width: 100%;
     z-index: 100;
 }
-header button{
+header a{
     float: left;
     float: right;
     display: block;
@@ -51,7 +51,7 @@ header button{
     border-left: solid 2px var(--light-color);
     transition: 0.3s;
 }
-header button:hover{
+header a:hover{
     background-color: var(--accent-color);
 }
 #themeChange{
