@@ -13,6 +13,10 @@
     --text-color: #131313;
 }
 [data-theme = "dark"]{
+    --accent-color: #caa012;
+    --main-font: "M Plus 1P Light";
+    --light-color: #ddd;
+    --dark-color: #131313;
     --bg-color: #131313;
     --text-color: #ddd;
 }
@@ -80,7 +84,7 @@ main{
 }
 #second{
     text-align: center;
-    background-color: var(--text-color);
+    background-color: var(--bg-color);
     width: 100vw;
     height: auto;
     z-index: 1;
@@ -144,7 +148,7 @@ main{
     transform:scale(1, 1);
 }
 #secondr{
-    background-color: var(--bg-color);
+    background-color: #131313;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,10 +159,10 @@ main{
 }
 @keyframes backfadeup{
     50%{
-        background-color: #dadada;
+        background-color: #ddd;
     }
     100%{
-        background-color: var(--bg-color);
+        background-color: #131313;
     }
 }
 #secondr img{
@@ -175,6 +179,7 @@ main{
         transform: rotate(360deg);
     }
 }
+/*
 #third{
     background-image: url(images/third.jpg);
     width: 100%;
@@ -231,6 +236,7 @@ main{
     transform-origin:left top;
     transform:scale(1, 1);
 }
+*/
 #fourth{
     text-align: center;
     float: left;
@@ -239,7 +245,7 @@ main{
     height: 100vh;
 }
 #fourthl{
-    background: linear-gradient(90deg, var(--accent-color), var(--dark-color));
+    background: linear-gradient(90deg, var(--accent-color), var(--bg-color));
     float: left;
     width: 40%;
     height: 100%;
@@ -266,17 +272,17 @@ main{
     outline: none;
     margin-top: 250px;
     background-color: var(--bg-color);
-    border: solid 1px #dadada;
+    border: solid 1px var(--text-color);
     font-size: 25px;
     transition: ease 0.2s;
 }
 #sns-navi span{
     position: relative;
     z-index: 5;
-    color: #dadada;
+    color: var(--text-color);
 }
 #sns-navi:hover span{
-    color: #dadada;
+    color: var(--text-color);
 }
 #sns-navi:before{
     content: '';
