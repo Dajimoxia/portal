@@ -6,9 +6,15 @@
 }
 :root{
     --accent-color: #caa012;
-    --main-font : "M Plus 1P Light";
+    --main-font: "M Plus 1P Light";
     --light-color: #ddd;
     --dark-color: #131313;
+    --bg-color: #ddd;
+    --text-color: #131313;
+}
+[data-theme = "dark"]{
+    --bg-color: #131313;
+    --text-color: #ddd;
 }
 ::selection{
     background-color: var(--accent-color);
@@ -16,14 +22,7 @@
 body{
     width: 100%;
     font-family: var(--main-font), sans-serif;
-}
-body[theme="light"]{
-    --main-color: #ddd;
-    --font-color: #131313;
-}
-body[theme="dark"]{
-    --main-color: #131313;
-    --font-color: #ddd;
+    transition: background-color 0.3s, color 0.3s;
 }
 header{
     -webkit-backdrop-filter: blur(30px);
@@ -81,14 +80,14 @@ main{
 }
 #second{
     text-align: center;
-    background-color: var(--dark-color);
+    background-color: var(--text-color);
     width: 100vw;
     height: auto;
     z-index: 1;
 }
 #secondl{
     text-align: center;
-    background-color: var(--light-color);
+    background-color: var(--text-color);
     float: left;
     width: 60vw;
     height: 100vh;
@@ -102,7 +101,7 @@ main{
 #description p{
     font-family: var(--main-font) , serif;
     font-size: 30px;
-    color: var(--dark-color);
+    color: var(--text-color);
 }
 #profile-navi{
     text-decoration: none;
@@ -115,7 +114,7 @@ main{
     text-align: center;
     outline: none;
     margin-top: 200px;
-    background-color: var(--dark-color);
+    background-color: var(--bg-color);
     font-size: 25px;
     transition: ease 0.2s;
 }
@@ -145,7 +144,7 @@ main{
     transform:scale(1, 1);
 }
 #secondr{
-    background-color: var(--dark-color);
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +158,7 @@ main{
         background-color: #dadada;
     }
     100%{
-        background-color: var(--dark-color);
+        background-color: var(--bg-color);
     }
 }
 #secondr img{
@@ -187,7 +186,7 @@ main{
 }
 #description2 p{
     padding-top: 100px;
-    color: #dadada;
+    color: #ddd;
     font-size: 45px;
     font-family: var(--main-font) , serif;
 }
@@ -202,7 +201,7 @@ main{
     text-align: center;
     outline: none;
     margin-top: 200px;
-    background-color: var(--dark-color);
+    background-color: var(--bg-color);
     border: solid 1px #dadada;
     font-size: 25px;
     transition: ease 0.2s;
@@ -235,7 +234,7 @@ main{
 #fourth{
     text-align: center;
     float: left;
-    background-color: var(--dark-color);
+    background-color: var(--bg-color);
     width: 100%;
     height: 100vh;
 }
@@ -266,7 +265,7 @@ main{
     text-align: center;
     outline: none;
     margin-top: 250px;
-    background-color: var(--dark-color);
+    background-color: var(--bg-color);
     border: solid 1px #dadada;
     font-size: 25px;
     transition: ease 0.2s;
