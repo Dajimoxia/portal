@@ -24,57 +24,58 @@ $(window).scroll(function () {
     window.addEventListener('load', scrollAnimationFunc);
     window.addEventListener('scroll', scrollAnimationFunc);
   });
-  //themeChange
+
+//themeChange
 const btn = document.getElementById('themeChange');
-        const html = document.documentElement;
+const html = document.documentElement;
 
         // 1. OSのダークモード設定を取得するクエリ
         // matchMediaを使うと、CSSの @media (prefers-color-scheme: dark) と同じ判定ができます
-        const osDarkParams = window.matchMedia('(prefers-color-scheme: dark)');
+const osDarkParams = window.matchMedia('(prefers-color-scheme: dark)');
 
         // テーマを適用してボタンの文字を変える関数
-        const applyTheme = (theme) => {
-            html.setAttribute('data-theme', theme);
-            if (theme === 'dark') {
-                btn.textContent = 'ライトモードにする';
-            } else {
-                btn.textContent = 'ダークモードにする';
-            }
-        };
+const applyTheme = (theme) => {
+  html.setAttribute('data-theme', theme);
+  if (theme === 'dark') {
+    btn.textContent = 'ライトモードにする';
+  } else {
+      btn.textContent = 'ダークモードにする';
+    }
+};
 
         // 2. 初期化処理：優先順位に従ってテーマを決める
-        const initTheme = () => {
-            const savedTheme = localStorage.getItem('theme');
+const initTheme = () => {
+  const savedTheme = localStorage.getItem('theme');
 
-            if (savedTheme) {
+  if (savedTheme) {
                 // A. 保存された設定があればそれを使う
-                applyTheme(savedTheme);
-            } else {
+    applyTheme(savedTheme);
+  } else {
                 // B. 保存設定がなければOSの設定に従う
-                const initialTheme = osDarkParams.matches ? 'dark' : 'light';
-                applyTheme(initialTheme);
-            }
-        };
+      const initialTheme = osDarkParams.matches ? 'dark' : 'light';
+      applyTheme(initialTheme);
+    }
+};
 
         // ページ読み込み時に実行
-        initTheme();
+initTheme();
 
         // 3. ボタンクリック時の処理（手動切り替え）
-        btn.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+btn.addEventListener('click', () => {
+  const currentTheme = html.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-            applyTheme(newTheme);
+  applyTheme(newTheme);
             
             // 手動で切り替えたら必ず保存する（次回からこれが優先される）
-            localStorage.setItem('theme', newTheme);
-        });
+  localStorage.setItem('theme', newTheme);
+});
 
         // 4. (オプション) OSの設定が変更された時に追従する
         // ただし、ユーザーがすでに手動設定(localStorage)している場合は無視する設定にしています
-        osDarkParams.addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                const newTheme = e.matches ? 'dark' : 'light';
-                applyTheme(newTheme);
-            }
-        });
+osDarkParams.addEventListener('change', (e) => {
+  if (!localStorage.getItem('theme')) {
+    const newTheme = e.matches ? 'dark' : 'light';
+    applyTheme(newTheme);
+  }
+});
