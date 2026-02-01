@@ -25,8 +25,8 @@ $(window).scroll(function () {
     window.addEventListener('scroll', scrollAnimationFunc);
   });
 
-//themeChange
-const btn = document.getElementById('themeChange');
+//theme-toggl
+const btn = document.getElementById('theme-toggle');
 const html = document.documentElement;
 
         // 1. OSのダークモード設定を取得するクエリ
