@@ -216,7 +216,7 @@ main{
 }
 #description3 p{
     padding-top: 200px;
-    color: var(--text-color);
+    color: var(--dark-color);
     font-size: 50px;
     font-family: var(--main-font) , serif;
 }
