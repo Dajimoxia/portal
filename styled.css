@@ -91,7 +91,7 @@ main{
 }
 #secondl{
     text-align: center;
-    background-color: var(--text-color);
+    background-color: var(--bg-color);
     float: left;
     width: 60vw;
     height: 100vh;
@@ -106,46 +106,6 @@ main{
     font-family: var(--main-font) , serif;
     font-size: 30px;
     color: var(--text-color);
-}
-#profile-navi{
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    width: 25%;
-    height: auto;
-    padding: 20px;
-    text-align: center;
-    outline: none;
-    margin-top: 200px;
-    background-color: var(--bg-color);
-    font-size: 25px;
-    transition: ease 0.2s;
-}
-#profile-navi span{
-    position: relative;
-    z-index: 5;
-    color: #dadada;
-}
-#profile-navi:hover span{
-    color: #dadada;
-}
-#profile-navi:before{
-    content: '';
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: var(--accent-color);
-    width: 100%;
-    height: 100%;
-    transition: transform .5s cubic-bezier(0.8, 0, 0.2, 1) 0s;
-    transform: scale(0, 1);
-    transform-origin: right top;
-    z-index: 2;
-}
-#profile-navi:hover:before{
-    transform-origin:left top;
-    transform:scale(1, 1);
 }
 #secondr{
     background-color: #131313;
@@ -256,7 +216,7 @@ main{
 }
 #description3 p{
     padding-top: 200px;
-    color: #dadada;
+    color: var(--text-color);
     font-size: 50px;
     font-family: var(--main-font) , serif;
 }
